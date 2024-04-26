@@ -2,10 +2,37 @@
 
 <div align="center">
 
-[![license](https://img.shields.io/pypi/l/ansicolortags.svg)](LICENSE) [![Release](https://img.shields.io/github/release/memochou1993/gpt-ai-assistant)](https://GitHub.com/memochou1993/gpt-ai-assistant/releases/)
+[![license](https://img.shields.io/pypi/l/ansicolortags.svg)](LICENSE)
 
 </div>
 
+這是fork [memochou1993](https://github.com/memochou1993/gpt-ai-assistant)的專案，並加上新的功能
+
+1. 可用其他的AI Saas廠商的 API接口，如 groq、deepinfra、openrouter、自架Ollama
+2. 產圖模型從 `dall-e-2` 改成 `dall-e-3`，並可設定畫質
+3. `gpt-4` 也換成 `gpt-4-turbo` 
+4. 增加 `gpt-4-vision` 圖片識別功能 
+
+新增環境變數
+
+```
+PROVIDER_BASE_URL //供應商API網址
+PROVIDER_BASE_TOKEN //供應商API金鑰
+PROVIDER_BASE_MODEL //供應商模型名稱 ex：llama3-70b-8192
+
+OPENAI_IMAGE_GENERATION_MODEL //使用的產圖模型，預設 dall-e-2
+OPENAI_IMAGE_GENERATION_QUALITY //使用的產圖尺吋，預設 256*256
+```
+
+實測
+![截圖 2024-04-26 凌晨1 54 01](https://github.com/memochou1993/gpt-ai-assistant/assets/4224127/b28b2d2a-3f5c-4c1f-bf48-f5abda6bd7c7)
+
+![505383787631476931](https://github.com/memochou1993/gpt-ai-assistant/assets/4224127/dd364b20-2bda-40fa-8ace-092d8089b408)
+
+![截圖 2024-04-26 下午2 47 55](https://github.com/memochou1993/gpt-ai-assistant/assets/4224127/a73be10c-f7db-42d0-bd69-4cc89ce03055)
+
+
+## memochou1993 gpt-ai-assistant
 GPT AI Assistant is an application that is implemented using the OpenAI API and LINE Messaging API. Through the installation process, you can start chatting with your own AI assistant using the LINE mobile app.
 
 ## News
